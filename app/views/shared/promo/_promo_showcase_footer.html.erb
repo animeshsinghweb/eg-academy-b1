@@ -1,0 +1,46 @@
+  <div class="promo-showcase-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 l8" id="promo-association">
+          <h4 class="pre-footer-heading text-center">In Association with: 
+          </h4>
+          <div class="partners-images">
+            <div class="ui small images">
+            <!--<a class="ui image" href="https://msg91.com/startups/?utm_source=startup-banner"><img class ="partner-image" src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a>-->
+            <a class="ui image tooltipped" data-position="top" data-delay="50" data-tooltip="MSG91" href="https://msg91.com/startups/?utm_source=startup-banner"><%= image_tag("https://lh3.googleusercontent.com/zPhDQ8t38qfpOm6UEpN4I4zEnu_NgC1TaCJ6S07PWxxCnWDHjtrXuXuFOqpkcMAdJA=w300", :class => "partner-image") %></a>
+            <a class="ui image tooltipped" data-position="top" data-delay="50" data-tooltip="eGurjan" href="http://egurjan.com"><%= image_tag("http://www.egurjan.com/images/eGurjan-logo.png", :class => "partner-image") %></a>
+            <a class="ui image tooltipped" data-position="top" data-delay="50" data-tooltip="Heroku" href="https://www.heroku.com"><%= image_tag("http://sylpheo.com/wp-content/uploads/2013/04/HEROKU-logo-900.png", :class => "partner-image") %></a>  
+            </div>
+            <a class="ui medium image tooltipped" data-position="top" data-delay="50" data-tooltip="InMyPlanet Networks" href="https://www.inmyplanet.com/?utm_source=egurjan-website"><%= image_tag("https://www.inmyplanet.com/wp-content/uploads/2016/01/InMyPlanet-Networks.png", :class => "partner-image") %></a>  
+            </br>
+            
+            <%= link_to "Become partner", about_path, :class => "ui inverted basic huge button green" %>
+          </div>  
+        </div>
+        <div class="col s12 m12 l4 promo-footer">
+            <h4 class="pre-footer-heading text-center">Subscribe Newsletter:</h4> 
+            
+            <p class="text-center">
+                Subscribe to our free newletter to receive every updates, news and offer from us.
+                <br></br>
+                Subscription also ensures that you don't miss any possible opportunity or offer.
+            </p>
+            
+            <div class="footer-subscribe form-horizontal">
+                <form action="http://egurjan.us13.list-manage.com/subscribe/post?u=5ae10d7684b7542c49973456a&amp;id=c9db747779" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    
+                <div class="input-field">
+                    <label for="email" data-error="This doesn't seems like email" data-success="Looks good. Click the subscribe button.">Email</label>
+                    <input id="email" type="email" class="validate" name="EMAIL" required>
+                </div>
+                
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="text-center ui basic orange huge inverted button">
+            </div>
+            
+         </form>  
+                
+            
+        </div>
+      </div>
+    </div>
+  </div>

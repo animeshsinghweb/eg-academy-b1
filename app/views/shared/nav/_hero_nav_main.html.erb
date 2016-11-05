@@ -1,0 +1,20 @@
+<div class="ui container">
+  
+  <div class="ui large secondary inverted pointing menu">
+    <a class="toc item">
+      <i class="sidebar icon"></i>
+    </a>
+    <%= link_to "Home", root_path, class: 'item ' + active_class(root_path) %>
+    <%= link_to "About Us", about_path, class: 'item ' + active_class(about_path)  %>
+    <%= link_to "Works", works_path, class: 'item ' + active_class(works_path)  %>
+    <%= link_to "Contacts", contact_path, class: 'item ' + active_class(contact_path)  %>
+    <div class="right item">
+      <div class="ui buttons">
+        <%= button_to 'Login', root_path, class: 'ui button orange' %>
+        <div class="or"></div>
+        <%= button_to 'Signup', root_path, class: 'ui button green'  %>
+      </div>
+    </div>
+  </div>
+  
+</div>

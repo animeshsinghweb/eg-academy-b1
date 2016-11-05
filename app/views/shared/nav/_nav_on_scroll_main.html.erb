@@ -1,0 +1,24 @@
+<style>
+  .eg-nav-logo {
+    width: 96px;
+  }
+</style>
+
+<div class="ui large top fixed hidden menu nav-on-scroll">
+  <div class="ui container">
+    <%= image_tag("ega.png", :alt => "eGurjan Logo" + @title, :class => "item img eg-nav-logo") %>
+    <%= link_to "Home", root_path, class: 'item ' + active_class(root_path) %>
+    <%= link_to "About Us", about_path, class: 'item ' + active_class(about_path)  %>
+    <%= link_to "Works", works_path, class: 'item ' + active_class(works_path)  %>
+    <%= link_to "Contacts", contact_path, class: 'item ' + active_class(contact_path)  %>
+    <div class="right menu">
+        <div class="ui buttons inverted item">
+          <%= button_to 'Login', root_path, :class =>'ui button white' %>
+          <!--<div class="or"></div>-->
+          <%= button_to '#', :class => 'ui button green' do  %>
+            <%= semantic_icon ('user') %> Signup
+          <% end %>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+   <title>
+    <% if @title.present? && controller_name == 'welcome' && action_name == 'index'  %>
+      <%= @title %>
+    <% elsif @title.present? %>
+      <%= @title + " | eGurjan Academy" %>
+    <% else %>
+      eGurjan
+    <% end %>
+  </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+      <!--Fonts-->
+ <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+ 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+  
+  
   <%= csrf_meta_tags %>
+  
 </head>
 <body>
+  
+<!-- Following Menu -->
+<!--Nav on Scroll Menu-->
+<%= render 'shared/nav/nav_on_scroll_main' %>
 
-<%= yield %>
+
+<!-- Sidebar Menu -->
+<%= render 'shared/nav/sidebar_mobile' %>
+
+
+
+<!-- Page Contents -->
+<% if controller.controller_name == "welcome" %>
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment hero">
+
+    <!--Main Hero Nav (Menu) -->
+    <%= render 'shared/nav/hero_nav_main' %>
+    
+
+    <div class="ui text container">
+        <div class="egurjan-logo">
+          <%= image_tag("ega.png", :alt => @title + " | eGurjan", :width => 350, :height => 200, :title => @title + " | eGurjan" )  %>
+        </div>
+      <h1 class="ui inverted header" id="h1new2">
+        <%= @h1 + " "  %> <span id="text-egurjan"><%= @h1span %> </span> 
+      </h1>
+      <h2 class="h2dm">
+        <%= @h2 %> 
+      </h2>
+      
+      <% if @button1.present? %>
+        <div class="ui huge purple button hero-button"><%= @button1 + ' ' %><i class="down arrow icon right"></i></div>
+      <% end %>
+      
+      <% if @button2.present? %>
+        <div class="ui orange huge button hero-button" id="hero-button-2"><%= @button2 + ' ' %><i class="right arrow icon right"></i></div>
+      <% end %>
+
+
+    </div>
+
+  </div>
+  
+  <% end %>
+  
+  <% if notice %>
+    <!--<p class="alert alert-success"><-%= notice %></p>-->
+    <script>
+        var $toastContent = $('<span><%= notice %></span>');
+        Materialize.toast($toastContent, 5000);
+    </script>
+  <% end %>
+  
+  <% if alert %>
+    <!--<p class="alert alert-danger"><-%= alert %></p>-->
+  <script>
+      var $toastContent = $('<span><%= alert %></span>');
+      Materialize.toast($toastContent, 5000);
+  </script>
+  <% end %>
+  
+  <%= yield %>
+
+
+<!--Promo Contact-->
+<% if controller.controller_name == 'welcome' %>
+<%= render 'shared/promo/promo_contact' %>
+
+<!--Pre Footer -->
+<%= render 'shared/footer/pre_footer' %>
+
+
+<!--Footer-->
+<%= render 'shared/footer/footer' %>
+<% end %>
+
+
+
 
 </body>
 </html>
+
+      

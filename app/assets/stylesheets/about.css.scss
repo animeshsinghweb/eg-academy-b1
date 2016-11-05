@@ -1,0 +1,81 @@
+.about-promo {
+    width: 100%;
+    padding: 4em;
+    background: #BB4D3E;
+    color: #fff;
+    
+    .about-dp-wrapper
+    {
+        margin: 0 auto;
+        
+        img {
+            position: relative;
+            margin: 0 auto;
+            margin-top: 10%;
+            
+            &:hover{
+                opacity: 0.6;
+                border: 3px solid #fff;
+                cursor: pointer;
+            }
+        }
+        
+        
+        h3 {
+            font-family: Raleway !important;
+            font-size: 2.5em;
+            color: #eee ;
+        }
+    }
+    
+    .about-desc-wrapper {
+        height: 80%;
+        padding: 6rem;
+        // background: #F5C700;
+        background: #353535;
+        
+        
+        
+        h4 {
+            border-bottom: 2.4px dotted #eee;
+            margin-bottom: 1.2em;
+        }
+        
+        .about-connect {
+            padding: 1.2em;
+            background: rgba(250, 220, 200, 0.4);
+            margin-bottom: 2em;
+            
+        }
+        
+    }
+    
+
+}
+
+.abd2 {
+    background: #353535;
+    color: #000 !important;
+    
+    .about-desc-wrapper {
+        background: #BB4D3E;
+        
+        p {
+        }
+        
+        h4{
+            border-bottom: 2.4px dotted #000;
+        }
+    }
+}
+    
+
+
+
+@media screen and (max-width: 600px){
+    .about-wrapper .about-desc-wrapper{
+        padding: 1.2em;
+        
+    }
+    
+}

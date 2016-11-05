@@ -1,0 +1,543 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// .navbar-inverse {
+// //   background-color: rgba(20, 50, 10, 0.8);
+// //   height: 75px;
+// //   padding-top: 10px;
+// }
+
+
+// .jumbotron {
+//     position: absolute;
+//     top: 0; bottom: 0; right: 0; left: 0;
+//     width: 100%;
+//     background-color: rgba(22, 200, 125, .80);
+//     min-height: 45em;
+//     text-align: center;
+//     color: #fff;
+//     box-shadow: 10px 4px orange;
+// }
+
+
+
+.hidden.menu {
+  // display: none;
+}
+
+.masthead.segment {
+  // min-height: 800px;
+  padding: 1em 0em;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.egurjan-logo {
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 20px) and (max-width: 570px)
+{
+  .egurjan-logo img 
+  {
+    // width: 280px;
+    height: 90px;
+  }
+}
+
+.masthead h1.ui.header {
+  // margin-top: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  font-size: 3em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+  display: none;
+  top: -.5em;
+
+  &:hover {
+    background: #ffb300 !important;
+  }
+
+  i {
+    &:hover {
+      color: #000 !important;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+// Effect for the hidden menu on scroll
+.nav-on-scroll {
+  // background: rgb(34, 53, 73) !important;
+  background: #953163 !important;
+  opacity: 100%;
+  height: 4.5em !important;
+  // box-shadow: 2px 2px 3px #eee !important;
+
+  &:hover {
+    opacity: 1;
+    
+  }
+  
+}
+
+
+.nav-on-scroll a {
+  color: #fff !important;
+  font-weight: bold !important;;
+}
+
+.nav-on-scroll a:hover {
+  color: #000 !important;
+  background: #ffb300 !important;
+}
+
+
+.hero {
+  // background: #301222 !important;
+  
+  min-height: 860px !important;
+  
+  display: inline-block !important;
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 10 !important;
+  background: none !important;
+  width: 100%;
+}
+
+.hero:after {
+  content: "";
+  position: absolute!important;
+  height: 140% !important;
+  width: 100% !important;;
+  transform: skewY(4.5deg) !important;;
+  background: #1b1c1d !important;;
+  top: -50%;
+  z-index: -2;
+  left: 0;
+}
+
+.hero-button {
+  margin-bottom: .5em !important;
+  margin-right: .5em !important;
+}
+
+#hero-button-2 {
+  box-shadow: none !important;
+}
+
+.promo-explain {
+  // background-color: #ffb300;
+  padding: 2em;
+  position: relative;
+  overflow: hidden;
+  z-index: 8;
+  margin-top: -14em;
+  min-height: 18em;
+  padding-top: 11em;
+}
+
+
+.promo-explain:after {
+  content: "";
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  transform: skewY(-4deg);
+  background: #ffb300;
+  top: -50%;
+  z-index: -2;
+  left: 0;
+}
+
+
+.promo-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.promo-icon {
+  height: 4em;
+  width: 4em;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 1em;
+}
+
+.promo-icon:hover {
+  background-color: #333;
+  cursor: pointer;
+  border: 3px solid #fff;
+}
+
+.promo-icon i {
+  color: #fff;
+  font-size: 2em;
+  margin-top: 48%;
+ 
+}
+
+.promo-icon i:hover {
+  color: #eee;
+}
+
+.promo-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.promo-text strong {
+  color: #E3000E;
+  font-size: 19px;
+}
+
+.promo-explain .col {
+  padding: 2em;
+}
+
+
+
+
+// Promo-Subscribe
+#promo-subscribe {
+  background-color: #232C3D;
+  color: #fff;
+  z-index: -1;
+  // padding-top: 12em;
+  padding: 12em 3em 3em 4em;
+  margin-top: -7em;
+  
+  h3 {
+    margin-top: 1.5em;
+  }
+  
+}
+
+
+// Promo Contact 
+.promo-contact-right {
+  // padding-top: 0.2em;
+  padding: .5em;
+  color: #fff;
+  font-weight: bold;
+  // margin-left: -7em;
+  display: inline-block;
+}
+
+.promo-contact-right .button {
+  display: inline;
+}
+
+#promo-contact {
+  margin-top: 2em;
+  color: #fff;
+  min-height: 40px;
+  // padding: 1.5em;
+  padding-right: 2em;
+  // background: #005057;
+  background: #953163;
+}
+
+#promo-contact .promo-contact-container {
+  // margin-top: 70%;
+  // padding-right: 5em;
+  // padding-top: 1em;
+  padding: 2.2em 2em 0.3em 2em;
+}
+
+#promo-contact-text a {
+  color: #ffb300;
+  font-size: 1.2em;
+  display: inline-block;
+
+  &:hover {
+    color: #eee;
+  }
+  
+}
+
+#promo-contact-text {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.promo-contact-right a:hover {
+  color: #fff;
+  background: none !important;
+  border: 2px solid #fff !important;;
+}
+
+#promo-contact:after {
+    content:'';
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    // border-top: solid 50px #005057;
+    border-top: solid 50px #953163;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+
+
+// Pre-footer
+
+#pre-footer {
+  // background-color: #031316;
+  background-color: #2b2d2d;
+  padding-top: 4.5em;
+}
+
+#pre-footer .pre-footer-heading {
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  font-family: Raleway;
+}
+
+#pre-footer a:hover {
+  color: #ffb300;
+  font-weight: bold;
+}
+
+#pre-footer a {
+  line-height: 2em;
+  font-size: 15px;
+  // color: #85E2FF;
+  color: #F24D16;
+}
+
+#pre-footer .container {
+  padding-bottom: 6em;
+}
+
+@media only screen and (max-width: 683px) {
+  #pre-footer .container {
+    text-align: center;
+  }
+}
+
+
+// Prefooter ad
+
+.pre-footer-ad {
+  margin-bottom: 4.5em !important;
+  padding: 3em;
+  padding-bottom: 0.2em !important;
+  text-align: center;
+}
+
+.pre-footer-ad-bottom {
+  display: inline-block;
+  opacity: .9;
+  // box-shadow: 5px 5px 10px #ff8f00;
+  border: 3px solid #fff;
+}
+
+.pre-footer-ad-bottom:hover {
+  border: 3px solid #eee;
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+#ad-footer-1 {
+  width: 100% !important;
+}
+
+#ad-footer-2 {
+  width: 100% !important;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 930px) {
+  a.back-to-top {
+   margin-left: 35% !important;
+  }
+}
+
+
+// Footer
+
+#footer {
+  padding: 2.5em;
+  // background: #050F15;
+  background: #212424;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+
+#footer a {
+  color: #F24D16;
+  
+  &:hover {
+    color: #ffb300;
+  }
+}
+
+
+// .back-to-top {
+//   position: absolute;
+//   height: 50px;
+//   width: 50px;
+//   background: #005057;
+//   border-radius: 50%;
+//   // margin-left: 50%;
+//   margin-left: 50vw;
+//   margin-top: -4.9em;
+  
+//   opacity: .9;
+  
+//   &:hover {
+//     opacity: 1;
+//     border: 1px solid #eee;
+//     height:c 55;
+//     width: 55px;
+//   }
+// }
+
+// .back-to-top i {
+//   padding: 5px;
+//   margin-top: 20%;
+//   color: #fff;
+//   font-size: 3em;
+// }
+
+// Promo Showcase
+#promo-association {
+  min-height: 10em;
+  border-right: 3px dotted #eee;
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 920px) {
+  #promo-association {
+    text-align: center;
+    margin-left: -2em;
+    border-right: none;
+  }
+}
+
+.promo-showcase-footer {
+  margin-bottom: 0 !important;
+  padding: 1em 5em;
+}
+
+.partners-images {
+  text-align: center;
+  padding: 2em;
+  
+  img {
+    margin: 1em ;
+    margin-bottom: 1.5em;
+    opacity: .9;
+    // width: 90%;
+    
+    &:hover{
+      opacity: 1;
+    }
+  }
+    
+}
+
+.footer-subscribe {
+  padding: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  
+
+  input {
+    color: #fff;
+  }
+  
+}
+
+.promo-footer p{
+  color: #ffb300;
+  font-size: 15px;
+  text-align: center;
+}

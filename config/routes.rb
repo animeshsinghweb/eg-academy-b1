@@ -1,4 +1,126 @@
 Rails.application.routes.draw do
+  namespace :admin do
+  get 'discussions/destroy'
+  end
+
+  get 'discussions/new'
+
+  namespace :admin do
+  get 'topics/new'
+  end
+
+  namespace :admin do
+  get 'topics/create'
+  end
+
+  namespace :admin do
+  get 'topics/edit'
+  end
+
+  namespace :admin do
+  get 'topics/update'
+  end
+
+  namespace :admin do
+  get 'topics/destroy'
+  end
+
+  namespace :admin do
+  get 'topics/index'
+  end
+
+  namespace :admin do
+  get 'topics/show'
+  end
+
+  resources :welcome
+  
+  get 'topics/show'
+
+  get 'welcome/index'
+
+  get 'about' => 'welcome#about'
+
+  get 'works' => 'welcome#works'
+  
+  get 'contact' => 'welcome#contact'
+
+  namespace :admin do
+  get 'sessions/new'
+  end
+
+  namespace :admin do
+  get 'sessions/create'
+  end
+
+  namespace :admin do
+  get 'users/new'
+  end
+
+  namespace :admin do
+  get 'users/create'
+  end
+
+  namespace :admin do
+  get 'users/edit'
+  end
+
+  namespace :admin do
+  get 'users/update'
+  end
+
+  namespace :admin do
+  get 'users/destroy'
+  end
+
+  namespace :admin do
+  get 'users/index'
+  end
+
+  namespace :admin do
+  get 'users/show'
+  end
+
+  namespace :admin do
+  get 'physius/new'
+  end
+
+  namespace :admin do
+  get 'physius/create'
+  end
+
+  namespace :admin do
+  get 'physius/edit'
+  end
+
+  namespace :admin do
+  get 'physius/update'
+  end
+
+  namespace :admin do
+  get 'physius/destroy'
+  end
+
+  namespace :admin do
+  get 'physius/index'
+  end
+
+  namespace :admin do
+  get 'physius/show'
+  end
+
+  get 'physius/index'
+
+  get 'physius/show'
+  
+  resources :physius, :topics, :discussions
+  
+  namespace :admin do
+    resources :physius, :topics, :discussions, :users
+  end
+  
+  root 'welcome#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

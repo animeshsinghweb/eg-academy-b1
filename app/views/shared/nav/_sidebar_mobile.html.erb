@@ -1,0 +1,8 @@
+<div class="ui vertical inverted sidebar menu">
+  <%= link_to "Home", root_path, class: 'item ' + active_class(root_path) %>
+  <%= link_to "About Us", about_path, class: 'item ' + active_class(about_path)  %>
+  <%= link_to "Works", works_path, class: 'item ' + active_class(works_path)  %>
+  <%= link_to "Contacts", contact_path, class: 'item ' + active_class(contact_path)  %>
+  <%= link_to 'Login', root_path, class: 'item' %>
+  <%= link_to 'Signup', root_path, class: 'item'  %>
+</div>
